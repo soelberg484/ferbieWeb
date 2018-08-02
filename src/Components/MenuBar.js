@@ -1,26 +1,41 @@
 import React from 'react';
-import {Navbar, Nav, NavItem, MenuItem, NavDropdown} from 'react-bootstrap';
+import {Navbar} from 'react-bootstrap';
+import Nav from "react-bootstrap/es/Nav";
+import NavItem from "react-bootstrap/es/NavItem";
+import {NavLink} from "react-router-dom";
+
 
 export class MenuBar extends React.Component {
 
     render(){
-        return (
+        const navigationBar = (
             <Navbar inverse collapseOnSelect>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <a href="#home">FerbieWeb</a>
+                        <a href="/">FerbieWeb</a>
                     </Navbar.Brand>
+
+                    <Navbar.Toggle />
                 </Navbar.Header>
+                <Navbar.Collapse>
                     <Nav pullRight>
-                        <NavItem eventKey={1} href="#">
+                        <NavItem eventKey={1}>
+                            <NavLink to="/om-os">
                             Om os
+                            </NavLink>
                         </NavItem>
-                        <NavItem eventKey={2} href="#">
+                        <NavItem eventKey={2}>
+                            <NavLink to="/projecter">
                             Projecter
+                            </NavLink>
                         </NavItem>
                     </Nav>
+                </Navbar.Collapse>
             </Navbar>
         );
+
+        return navigationBar;
+
     }
 
 }
