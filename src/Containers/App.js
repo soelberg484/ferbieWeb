@@ -3,6 +3,7 @@ import '../Design/App.css';
 import {MenuBar} from "../Components/MenuBar";
 import {AboutUs} from "../Components/AboutUs";
 import {Projects} from "../Components/Projects";
+import {Home} from "../Components/Home";
 import {
     Route,
     NavLink,
@@ -16,6 +17,7 @@ class App extends Component {
             <div>
                 <MenuBar/>
                 <div className="content">
+                    <Route exact path="/" component={Home}/>
                     <Route path="/om-os" component={AboutUs}/>
                     <Route path="/projecter" component={Projects}/>
                 </div>

@@ -12,7 +12,9 @@ export class MenuBar extends React.Component {
             <Navbar inverse collapseOnSelect>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <a href="/">FerbieWeb</a>
+                        <NavLink to="/">
+                            <a>FerbieWeb</a>
+                        </NavLink>
                     </Navbar.Brand>
 
                     <Navbar.Toggle />
