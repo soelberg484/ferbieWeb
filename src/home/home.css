@@ -1,0 +1,42 @@
+
+.img-container {
+    background-image: url('../img/home_header.jpg');
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.img-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%) skew(20deg);
+    color: white;
+    width: 60%;
+    background-color: black;
+}
+.img-text h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    transform: skew(-20deg);
+    }
+
+.img-button-left {
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    width: 200px;
+    transform: translate(-50%, -50%)
+}
+.img-button-right {
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    width: 200px;
+    transform: translate(-50%, -50%)
+}
+
+
